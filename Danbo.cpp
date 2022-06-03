@@ -17,3 +17,17 @@ int main (){
     
     //masukkan nilai untuk setiap variabel CdCl2
   Cdx = Cdy = Cdz = 
+    
+    Cl1x = 
+    Cl1y =
+    Cl1z =
+    
+    Cl2x =
+    Cl2y =
+    Cl2z = 
+    
+    //memasukkan nilai tersebut ke dalam file
+    ofstream file;
+    file.open("kadmium klorida");
+    file << "3\n"<< endl;
+    file << setw(3)<<" Cd"<<setw(3)<<""\<<fixed << setprecision(3) << Cdx << setw(3)<<""\
