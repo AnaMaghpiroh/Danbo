@@ -18,13 +18,13 @@ int main (){
     //masukkan nilai untuk setiap variabel CdCl2
   Cdx = Cdy = Cdz = 0.0;
     
-    Cl1x = 
-    Cl1y =
-    Cl1z =
+    Cl1x =sin(2.42*pi/180)*2.420;
+    Cl1y =0.0;
+    Cl1z =cos(2.42*pi/180)"2.420;
     
-    Cl2x =
-    Cl2y =
-    Cl2z = 
+    Cl2x =-Clx;
+    Cl2y =Cly;
+    Cl2z =Clz;
     
     //memasukkan nilai tersebut ke dalam file
     ofstream file;
