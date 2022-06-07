@@ -1,3 +1,4 @@
+%%writefile ep-CdCl2.cpp
 
 #include "iostream"
 #include "cmath"
@@ -5,6 +6,7 @@
 #include "fstream"
 
 using namespace std;
+
 
 int main (){
   //deklarasi variabel
@@ -52,6 +54,33 @@ int main (){
     Cl2y =Cly;
     Cl2z =Clz;
     
+    Cdx[counter] = rB_Cdx + (i*3.01);
+    Cdy[counter] = rB_Cdy + (j*3.01);
+    Cdz[counter] = rB_Cdz + (k*3.01);
+ 
+    Cl1x[counter] = Cdx[counter] + rB_Cl1x;
+    Cl1y[counter] = Cdy[counter] + rB_Cl1y;
+    Cl1z[counter] = Cdz[counter] + rB_Cl1z;
+
+    Cl2x[counter] = Cdx[counter] + rB_Cl2x;
+    Cl2y[counter] = Cdy[counter] + rB_Cl2y;
+    Cl2z[counter] = Cdz[counter] + rB_Cl2z;
+
+    counter += 1;
+     }
+   }
+ }   
+
+    //hasil iterasi dimasukkan ke dalam file xyz
+    ofstream file;
+    file.open("kadmium-klorida.xyz");
+    int N = 125 * 5;
+    file << N << "\n"<< endl;
+
+    // iterasi dalam output array
+    for(int m = 0; m < 125; m++)
+
+     
     //memasukkan nilai tersebut ke dalam file
     ofstream file;
     file.open("kadmium klorida");
