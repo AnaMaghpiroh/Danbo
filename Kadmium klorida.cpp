@@ -178,6 +178,14 @@ int main (){
                    
         //deklarasi variabel float pi=3.14;
 
+     //deklarasi molekul CdCl2
+     float Cdx[125], Cdy[125], Cdz[125];
+     float Cl1x[125], Cl1y[125], Cl1z[125];
+     float Cl2x[125], Cl2y[125], Cl2z[125];
+  
+
+
+
 
 
       
