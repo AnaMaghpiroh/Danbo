@@ -146,6 +146,33 @@ int main (){
       
       rcut = 3* sigma
         rcut2 = pow (rcut, 2);
+     
+      cout<<"program menghitung energi potensial dari CdCl2"
+      >>endl;
+      cout<<"masukkan nilai densitas CdCl2(eg.10);
+      cin>>densitas;
+      
+      numb_mol=densitas*(Na/Mr_CdCl2)*cm3_to_A3;
+      cout<<"masukan panjang sel simulasi(eg.5):";
+      cin>>numb_lat 
+      N=(paw(numb_lat,3))*3;
+      volum=(float(N/numb_mol;
+                   
+      //panjang sel simulasi secara perhitungan 
+      lx=pow(volum,(1.0/3.0));
+      ly=lx;
+      lz=lx;
+      if(lx<(2*rcut)){
+        cout<<"sory mazeh,sel simulasi kamu besar";
+        exit(0);
+      } else{
+        cout<<"panjang sel simulasi baru:"<<lx<<endl;}
+        lat=lx/(float)numb_lat;
+                   
+        //deklarasi variabel float pi=3.14;
+
+
+
       
         
 
