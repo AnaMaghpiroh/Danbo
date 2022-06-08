@@ -35,13 +35,20 @@ int main (){
   float rB_Cl2x =- rB_Cl1x;
   float rB_Cl2z = rB_Cl1y;
   float rB_Cl2z = rB_Cl1z;
-  
+
   //iterasi untuk setiap molekul kadmium klorida
-  for (int i = 0; i < 3; i++) {
-    for (int j = 0; j < 3; j++) {
-      for (interaksi k =0; k < 3; k++) {
-        
-    
+  for (int i = 0; i < 3; i++){
+    for (int j = 0; j < 3; j++){
+      for (interaksi k =0; k < 3; k++){
+ 
+  int counter =0;
+    for(int i = 0; i <numb_lat; i++){//x
+      for(int j = 0; j < numb_lat; j++){//y
+        for(int k = 0; k < numb_lat; k++){//z
+
+  Cx[counter] = rB_Cx + (i*lat);
+  Cy[counter] = rB_Cy + (k*lat);
+  Cz[counter] = rB_Cz + (k*lat);
     
     //masukkan nilai untuk setiap variabel CdCl2
   Cdx = Cdy = Cdz = 0.0;
