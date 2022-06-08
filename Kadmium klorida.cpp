@@ -14,9 +14,9 @@ int main (){
   int counter =0;
     
     //deklarasi molekul kadmium klorida
-    float Cdx, Cdy, Cdz;
-    float Cl1x, Cl1y, Cl1z;
-    float Cl2x, Cl2y, Cl2z;
+    float Cdx[N], Cdy[N], Cdz[N];
+    float Cl1x[N], Cl1y[N], Cl1z[N];
+    float Cl2x[N], Cl2y[N], Cl2z[N];
   
     /*  Cl     Cl
           \   /
@@ -107,6 +107,12 @@ int main (){
     return 0;
 }
  
+    %%shell
+    
+    g++ kadmium klorida. cpp-o ep
+    . /ep
+    
+
     %%writerfile ep-CdCl2.cpp
     
     #imclude "iostream"
@@ -122,6 +128,24 @@ int main (){
     float cm^3_to_A3=1.0E-24;
     float numb_mol;
     float Na = 6.022E23;            // bilangan avogardo
-    float Mr_CdCl2 = 111;           // massa relatif dari CdCl2
-    
+    float Mr_CdCl2 = 111;           // massa relatif dari kadmium klorida
+    int numb_lat;                   // panjang sel simulasi
+    int N;                          // jumlah molekul
+    float volume;                   // volume dari molekul kadmium klorida
+    float Ix, Iy, Iz;               // panjang sel simulasi terhitung
+    float lat;                      // jarak antar molekul kadmium klorida
+
+    // variabel perhitungan energi potensial
+    float sigma = 2.725;             // satuan (A) 
+    float epsilon = 3.725;           // satuan (kj/mol)
+    float rij, rcut, ruct2;
+    float Ep,Ep_Lj, A12, B6 ;
+    float dx, dy,dz;
+   
+    int main(){
+      
+      rcut = 3* sigma
+        rcut2 = pow (rcut, 2);
+      
+        
 
