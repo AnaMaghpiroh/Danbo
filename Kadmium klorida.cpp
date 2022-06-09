@@ -18,10 +18,8 @@ int main (){
     float Cl1x[N], Cl1y[N], Cl1z[N];
     float Cl2x[N], Cl2y[N], Cl2z[N];
   
-    /*  Cl     Cl
-          \   /
-            Cd 
-        molekul kadmium klorida itu bentuk liner
+    /*  Cl- Cd - Cl
+        molekul kadmium klorida itu bentuk linier
     */
   
   float rB_Cdx = 0,0;
