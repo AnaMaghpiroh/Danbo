@@ -182,6 +182,28 @@ int main (){
      float Cdx[125], Cdy[125], Cdz[125];
      float Cl1x[125], Cl1y[125], Cl1z[125];
      float Cl2x[125], Cl2y[125], Cl2z[125];
+
+     N];
+  
+    /*  Cl     Cl
+          \   /
+            Cd 
+        molekul kadmium klorida itu bentuk liner
+    */
+  
+  float rB_Cdx = 0,0;
+  float rB_Cdy = 0.0;
+  float rB_Cdz = 0.0;
+  
+  float rB_Clx =sin (2.42*pi/180) * 2.420;
+  float rB_Cly =0.0;
+  float rB_Clz =cos(2.42*pi/180)  * 2.420;
+  
+  float rB_Cl2x =- rB_Cl1x;
+  float rB_Cl2z = rB_Cl1y;
+  float rB_Cl2z = rB_Cl1z;
+
+  
   
 
 
