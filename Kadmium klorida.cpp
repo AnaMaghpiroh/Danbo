@@ -1,4 +1,4 @@
-%%writefile ep-CdCl2.cpp
+%%writefile ep-kadmiumdiklorida-ruah.cpp
 
 #include "iostream"
 #include "cmath"
@@ -19,10 +19,10 @@ int main (){
     float Cl2x[N], Cl2y[N], Cl2z[N];
   
     /*  Cl- Cd - Cl
-        molekul kadmium klorida itu bentuk linier
+        molekul kadmiumdiklorida itu bentuk linier
     */
   
-  float rB_Cdx = 0,0;
+  float rB_Cdx = 0.0;
   float rB_Cdy = 0.0;
   float rB_Cdz = 0.0;
   
@@ -34,7 +34,7 @@ int main (){
   float rB_Cl2z = rB_Cl1y;
   float rB_Cl2z = rB_Cl1z;
 
-  //iterasi untuk setiap molekul kadmium klorida
+  //iterasi untuk setiap molekul kadmiumdiklorida
   for (int i = 0; i < 3; i++){
     for (int j = 0; j < 3; j++){
       for (interaksi k =0; k < 3; k++){
@@ -53,7 +53,7 @@ int main (){
     
     Cl1x =sin(2.42*pi/180)*2.420;
     Cl1y =0.0;
-    Cl1z =cos(2.42*pi/180)"2.420;
+    Cl1z =cos(2.42*pi/180)*2.420;
     
     Cl2x =-Clx;
     Cl2y =Cly;
@@ -78,7 +78,7 @@ int main (){
 
     //hasil iterasi dimasukkan ke dalam file xyz
     ofstream file;
-    file.open("kadmium-klorida.xyz");
+    file.open("kadmium-diklorida.xyz");
     int N = 125 * 5;
     file << N << "\n"<< endl;
 
@@ -92,8 +92,8 @@ int main (){
     file << "3\n"<< endl;
     file << setw(3)<<" Cd"<<setw(3)<<"" \
     << fixed << setprecision(3) << Cdx << setw(3)<<""\
-    << fixed << setpracision(3) << Cdy << setw(3)<<""\
-    << fixed << setpracision(3) << Cdz << "\n";
+    << fixed << setprecision(3) << Cdy << setw(3)<<""\
+    << fixed << setprecision(3) << Cdz << "\n";
     
     file << setw(3) << "Cl1" << setw(3) << " " \
     << fixed << setprecision(3) << Cl1x << setw(3) << " "\
@@ -101,7 +101,7 @@ int main (){
     << fixed << setprecision(3) << Cl1z << "\n";
 
     file << setw(3) << "Cl2” << setw(3) << " " \
-    << fixed << setprecision(3) << Cl2x  << setw(3) << " "\
+    << fixed << setprecision(3) << Cl2x << setw(3) << " "\
     << fixed << setprecision(3) << Cl2y << setw(3) << " "\
     << fixed << setprecision(3) << Cl2z << "\n";
 
@@ -114,7 +114,7 @@ int main (){
  
     %%shell
     
-    g++ kadmium klorida. cpp-o ep
+    g++ kadmiumdiklorida. cpp-o ep
     . /ep
     
 
@@ -183,10 +183,10 @@ int main (){
 
      N];
   
-    /*  Cl     Cl
-          \   /
-            Cd 
-        molekul kadmium klorida itu bentuk liner
+    /*  Cl — cd — Cl
+
+
+     molekul kadmium klorida itu bentuk liner
     */
   
   float rB_Cdx = 0,0;
