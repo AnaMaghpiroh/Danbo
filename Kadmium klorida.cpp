@@ -26,9 +26,9 @@ int main (){
   float rB_Cdy = 0.0;
   float rB_Cdz = 0.0;
   
-  float rB_Clx =sin (2.42*pi/180) * 2.420;
+  float rB_Clx =sin (2.42*pi/180) * 4.840;
   float rB_Cly =0.0;
-  float rB_Clz =cos(2.42*pi/180)  * 2.420;
+  float rB_Clz =cos(2.42*pi/180)  * 4.840;
   
   float rB_Cl2x =- rB_Cl1x;
   float rB_Cl2z = rB_Cl1y;
@@ -51,9 +51,9 @@ int main (){
     //masukkan nilai untuk setiap variabel CdCl2
   Cdx = Cdy = Cdz = 0.0;
     
-    Cl1x =sin(2.42*pi/180)*2.420;
+    Cl1x =sin(2.42*pi/180)*4.840;
     Cl1y =0.0;
-    Cl1z =cos(2.42*pi/180)*2.420;
+    Cl1z =cos(2.42*pi/180)*4.840;
     
     Cl2x =-Clx;
     Cl2y =Cly;
@@ -88,7 +88,7 @@ int main (){
      
     //memasukkan nilai tersebut ke dalam file
     ofstream file;
-    file.open("kadmium klorida");
+    file.open("kadmium diklorida");
     file << "3\n"<< endl;
     file << setw(3)<<" Cd"<<setw(3)<<"" \
     << fixed << setprecision(3) << Cdx << setw(3)<<""\
@@ -114,7 +114,7 @@ int main (){
  
     %%shell
     
-    g++ kadmiumdiklorida. cpp-o ep
+    g++ ep-kadmiumdiklorida-ruah. cpp-o kadmiumdiklorida
     . /ep
     
 
