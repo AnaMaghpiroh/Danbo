@@ -44,9 +44,9 @@ int main(){
           rB_Cdy ;counter;rB_Cdy + (k*3.01);
           rB_Cdz ;counter;rB_Cdz + (k*3.01);
     
-          rB_Cl1x = sin(2.42*pi/180)*2.420;
+          rB_Cl1x = sin(2.42*pi/180)* 4.840;
           rB_Cl1y = 0.0;
-          rB_Cl1z = cos(2.42*pi/180)*2.420;
+          rB_Cl1z = cos(2.42*pi/180)* 4.840;
     
           rB_Cl2x = - rB_Cl1x;
           rB_Cl2y = rB_Cl1y;
