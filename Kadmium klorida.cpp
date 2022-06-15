@@ -41,7 +41,7 @@ int main(){
       for (int k =0; k < 3; k++){
  
           rB_Cdx ;counter;rB_Cdx + (i*3.01);
-          rB_Cdy ;counter;rB_Cdy + (k*3.01);
+          rB_Cdy ;counter;rB_Cdy + (j*3.01);
           rB_Cdz ;counter;rB_Cdz + (k*3.01);
     
           rB_Cl1x = sin(2.42*pi/180)* 4.840;
