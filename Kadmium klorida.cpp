@@ -52,17 +52,17 @@ int main(){
           rB_Cl2y = rB_Cl1y;
           rB_Cl2z = rB_Cl1z;
     
-          rB_Cdx ;counter;rB_Cdx + (i*3.01);
-          rB_Cdy ;counter;rB_Cdy + (j*3.01);
-          rB_Cdz ;counter;rB_Cdz + (k*3.01);
+          rB_Cdx [counter} = rB_Cdx + (i*3.01);
+          rB_Cdy [counter] = rB_Cdy + (j*3.01);
+          rB_Cdz [counter] = rB_Cdz + (k*3.01);
  
-           rB_Cl1x ;counter:rB_Cdx ;counter; + rB_Cl1x;
-           rB_Cl1y ;counter;rB_Cdy ;counter; + rB_Cl1y;
-           rB_Cl1z ;counter;rB_Cdz ;counter; + rB_Cl1z;
+           rB_Cl1x [counter] = rB_Cdx[counter] + rB_Cl1x;
+           rB_Cl1y [counter] = rB_Cdy[counter] + rB_Cl1y;
+           rB_Cl1z [counter] = rB_Cdz[counter] + rB_Cl1z;
 
-           rB_Cl2x ;counter;rB_Cdx ;counter; + rB_Cl2x;
-           rB_Cl2y ;counter;rB_Cdy ;counter; + rB_Cl2y;
-           rB_Cl2z ;counter;rB_Cdz ;counter; + rB_Cl2z;
+           rB_Cl2x [counter] = rB_Cdx[counter] + rB_Cl2x;
+           rB_Cl2y [counter] = rB_Cdy[counter] + rB_Cl2y;
+           rB_Cl2z [counter] = rB_Cdz[counter] + rB_Cl2z;
 
            counter += 1;
          }
